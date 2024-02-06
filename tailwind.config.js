@@ -25,6 +25,9 @@ export default {
         "ChartGray": "#C4DEFF",
         "activeNavIcon": "#1D1D1D",
         "header": "#1E263388"
+      },
+      screens:{
+        "largelaptop": "1400px",
       }
     },
   },

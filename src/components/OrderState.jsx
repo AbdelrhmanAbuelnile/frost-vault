@@ -10,7 +10,7 @@ function OrderState({state}) {
 
   return (
     <span
-      className={`p-1 text-center ${stateColor[state]} w-1/6 rounded-md`}
+      className={`p-1 text-center truncate ${stateColor[state]} w-1/6 rounded-md`}
     >{state}</span>
   )
 }

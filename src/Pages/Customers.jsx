@@ -22,25 +22,8 @@ function Customers() {
 						placeholder="Search by fridge model, customer name, customer id, or location"
 						value={searchTerm}
 						onChange={(e) => setSearchTerm(e.target.value)}
-						className="w-4/12 p-2 mb-4 border border-secondary rounded-md focus:outline-none focus:border-primary bg-transparent text-secondary"
+						className="w-full lg:w-4/12 p-2 mb-4 border border-secondary rounded-md focus:outline-none focus:border-primary bg-transparent text-secondary"
 					/>
-					{/* <div className="absolute top-11 left-0 bg-secondary flex flex-col justify-center items-start gap-3 rounded-md w-fit">
-						{searchTerm &&
-							filteredCustomers.map((customer) => (
-								<Link
-									to={`/customer/${customer.id}`}
-									key={customer.id}
-									className="flex flex-row items-center hover:bg-green-300 w-full hover:rounded-md"
-								>
-									<div className="p-2 text-center">
-										{customer.customerName}
-									</div>
-									<div className=" p-2 text-center truncate line-clamp-1">
-										{customer.fridge_model}
-									</div>
-								</Link>
-							))}
-					</div> */}
 				</div>
 				<div className="w-full rounded-md">
 					<div className="flex flex-row font-semibold bg-secondary text-darkGray rounded-t-md">

@@ -1,17 +1,13 @@
 import React, { useContext } from "react";
 import { NavLink, Link } from "react-router-dom";
-import { BsTelephonePlusFill, BsGear } from "react-icons/bs";
-import { GrHomeRounded } from "react-icons/gr";
+import { PiPackageFill } from "react-icons/pi";
 import { MdOutlineInsertChart } from "react-icons/md";
-import { AiOutlineMessage } from "react-icons/ai";
-import { LuWallet } from "react-icons/lu";
-import { CiLogout } from "react-icons/ci";
 import { FaPeopleCarry } from "react-icons/fa";
 
 function SideNav() {
 	return (
 		<>
-			<div className="w-full max-w-[133px] h-full max-h-[500px] py-10 flex flex-col justify-center items-center gap-32 bg-nav z-20 rounded-[20px] fixed inset-0 top-2/4 left-6 -translate-y-2/4">
+			<div className="w-full max-w-[133px] h-full max-h-[500px] py-10 flex flex-col justify-center items-center gap-32 bg-nav z-20 rounded-[20px] fixed inset-0 top-2/4 left-6 -translate-y-[40%]">
       <NavLink
 					to={"/"}
 					className="
@@ -46,7 +42,7 @@ function SideNav() {
           hover:text-white duration-300 flex flex-col justify-center items-center gap-2
 						"
 				>
-					<BsTelephonePlusFill />
+					<PiPackageFill />
           <span className="text-base font-medium">
             Orders
           </span>

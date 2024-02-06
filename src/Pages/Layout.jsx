@@ -8,11 +8,11 @@ function Layout() {
           <Header />
 
           <div className='w-full h-full py-4 px-2 md:px-7 flex flex-row justify-center items-start gap-6'>
-            <div className='w-1/12 h-full md:block hidden'>
+            <div className='w-1/12 h-full md:hidden largelaptop:block hidden'>
               <SideNav />
             </div>
 
-            <div className='w-full md:w-11/12 h-full z-30'>
+            <div className='w-full largelaptop:w-11/12 h-full'>
               <Outlet />
             </div>
 
