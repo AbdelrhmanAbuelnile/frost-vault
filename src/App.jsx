@@ -16,23 +16,23 @@ import OrderDetails from "./Pages/OrderDetails.jsx";
 
 function App() {
 
-  const [isMobile, setIsMobile] = useState(false)
+  // const [isMobile, setIsMobile] = useState(false)
 
-  useEffect(()=>{
-    if(window.innerWidth < 500){
-      setIsMobile(true) 
-    }
-  },[])
+  // useEffect(()=>{
+  //   if(window.innerWidth < 500){
+  //     setIsMobile(true) 
+  //   }
+  // },[])
 
 
 	return (
 		<>
-      {
+      {/* {
         isMobile ? <div className="w-screen h-screen flex flex-col justify-center items-center gap-10 bg-primary text-red-700 ">
           <p className="font-bold text-4xl">افتح من اللابتوب يا نجم</p>
           <p className="font-smibold text-xl">لسه شغال علي الفون والله</p>
         </div>
-        :
+        : */}
 
 			<Router>
         <Routes>
@@ -45,7 +45,7 @@ function App() {
           </Route>
         </Routes>
       </Router>
-      }
+      {/* } */}
 		</>
 	);
 }
